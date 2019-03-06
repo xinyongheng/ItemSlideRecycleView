@@ -73,7 +73,7 @@ class ItemSlideRecycleView @JvmOverloads constructor(
                 var slide = checkEffectiveSlideLength(e.x, e.y)
                 if (slide > 0f) {
                     //查找当前菜单
-                    findMotionView(e.x.toInt(), e.y.toInt())
+                    findMotionView(downLastX.toInt(), downLastY.toInt())
                     slideEffiectiveTag = true
                     return true
                 }
